@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lindsey Raymond</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&family=Roboto:wght@400;500;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        .nav-link-custom {
+    color: #3D81B2;
+    text-decoration: none;
+    font-family: 'Sora', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+}
+a{
+    color: #3D81B2;
+}
+body {
+   font-family: 'Lato', sans-serif;
+}
+.collapse.show {
+   position: relative; 
+}
+
+.collapse.show::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   right: -60px;
+   width: 30px; /* Adjust width as needed */
+   height: 100%;
+   background-image: url('lines.png');
+   background-repeat: no-repeat;
+   background-position: right top;
+   background-size: contain;
+}
+
+.email-link {
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #3D81B2;
+    text-align: center;
+    display: block;
+    line-height: 20px;
+}
+.contact-info i {
+    color: #3D81B2;
+}
+
+.contact-info a:hover {
+    color: #3D81B2;
+}
+.nav-divider {
+    color: #3D81B2;
+    font-size: 1.1rem;
+    margin: 0 10px;
+}
+.profile-image {
+   border-radius: 0;
+   width: 100%;
+   height: auto;
+   object-fit: cover;
+   max-width: 400px;
+   margin-bottom: 13px;
+}
+.list-bio li{
+    font-size: 20px !important;
+    font-weight:400 !important;
+    line-height: 30px !important;
+}
+section.mt-4 {
+    padding-left: 10px;
+    padding-right: 30px;
+    margin-top: 0px;
+}
+
+.list-bio {
+    padding-top: 70px;
+    padding-bottom: 15px;
+}
+.col-md-8 {
+    padding-left: 32px;
+}
+        .bg-custom-blue {
+            background-color: #fff;
+        }
+        .full-width-header {
+            margin-top: 10px !important;
+            margin: 0;
+            padding: .3rem 0;
+            width: 100%;
+        }
+        .section-header {
+            background-color: #3D81B2;
+            margin-bottom: 1rem;
+            inline-size: max-content;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Sora', sans-serif;
+        }
+        h1{
+            font-size: 60px !important;
+            color: #3D81B2 !important;
+            font-weight: 700 !important;
+            line-height: 75.6px !important;
+        }
+        h2{
+            font-size: 26px !important;
+            font-weight: 700 !important;
+            line-height: 30.24px !important; 
+        }
+        h3{
+            font-family: 'Roboto' !important;
+            font-size: 22px !important;
+            font-weight: 500 !important;
+            line-height: 40px !important;
+            /* color: #3D81B2 !important;   */
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        .card-title, .btn {
+            width: 90px;
+            height: 30px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px !important;
+            font-weight: 400 !important;
+            line-height: 21px !important;
+            color: #3D81B2;
+            text-decoration: none;
+            border: 1px solid #3d81b2;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            padding-right: 6px !important;
+            padding-left: 6px !important;
+            border-radius: 4px;
+            box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.2), 0 0px 2px 0 rgba(0, 0, 0, 0.18);
+        }
+        .market-effects{
+            color: #3D81B2;
+        }
+        .card {
+            border: none;
+            padding: 0;
+        }
+        .card-body {
+         padding: 0px;
+        }
+        .paper-title {
+            font-weight: 600;
+        }
+        hr{
+            color: #3D81B2;
+    opacity: 1;
+    height: 2px;
+    background-color: #3D81B2;
+    border: none;
+        }
+        hr.horizontal-line {
+          margin-left: 10px;
+       }
+        p.text-muted {
+        font-size: 16px !important;
+        font-family: 'Lato', sans-serif !important;
+        font-weight: 400 !important;
+        line-height: 24px !important;
+        margin-right: 20px;
+       }
+       p.text-muted.sub-heading.mb-1 {
+        font-size: 18px !important;
+        font-family: 'Roboto', sans-serif !important;
+        line-height: 20px !important;
+        font-weight: 400 !important;
+    }
+    small.text-muted.selected-media.d-block a{
+    font-size: 15px !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 400 !important;
+    line-height: 30px !important;
+    color: #767676 !important;
+   }
+   @media(max-width:768px){
+    .list-bio {
+    padding-top: 30px;
+       }
+.collapse.show::after {
+   content: '';
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 30px; /* Adjust width as needed */
+   height: 100%;
+   background-image: url('lines.png');
+   background-repeat: no-repeat;
+   background-position: right top;
+   background-size: contain;
+}
+h1{
+    padding-left: 0px;
+    line-height: 60px !important;
+}
+h2 {
+    font-size: 23px !important;
+    font-weight: 700 !important;
+    line-height: 30.24px !important;
+  }
+    section.mt-4 {
+        padding-left: 5px;
+    } 
+    hr.horizontal-line {
+    margin-left: 5px;
+    }
+    .col-md-8 {
+    padding-left: 0px;
+    }
+   }
+
+    </style>
+</head>
+<body>
+    <div class="bg-custom-blue full-width-header mb-4">
+        <div class="container">
+            <h1 class="display-4 text-left m-0">Lindsey Raymond</h1>
+            <hr> 
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row mb-4">
+            <div class="col-md-4">
+                <img src="img.png" alt="Lindsey Raymond" class="profile-image">
+                <div class="contact-info text-center">
+                    <a href="mailto:lraymond@mit.edu" class="email-link">
+                        <i class="bi bi-envelope me-2"></i>lraymond@mit.edu
+                    </a>
+                 </div>
+             </div>
+            
+            <div class="col-md-8">
+                <div class="list-bio">
+                    <ul>
+                        <li class="mb-3">My research studies the impacts of digitization and artificial intelligence on workers, markets, and organizations.</li>
+                        <li class="mb-3">Starting in July 2024, I will be a postdoctoral fellow in Economics at Microsoft Research. I will join Harvard Business School as an Assistant Professor in the Fall of 2025.</li>
+                        <li class="mb-3">From July 2021 to July 2022, I was on leave as a Staff Economist at the Council of Economic Advisers.</li>
+                    </ul>
+                </div>
+                <div class="mt-4 text-end">
+                    <a href="https://www.dropbox.com/scl/fi/w0o0q07y5jo9k0p4svhdp/CV_LindseyRaymond_postdoc.pdf?rlkey=vc0vc5j257velkwzfmqizrc05&e=1&st=rg2iccrt&dl=0" class="nav-link-custom">CV</a>
+                    <span class="nav-divider">|</span>
+                    <a href="https://scholar.google.com/citations?user=xqavW90AAAAJ&hl=en&oi=ao" class="nav-link-custom">GOOGLE SCHOLAR</a>
+                </div>
+                <hr class="horizontal-line">
+                <section class="mt-4">
+                    <h2 class="h3 text-white p-2  section-header">Working Papers</h2>
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="h5 paper-title market-effects">The Market Effects of Algorithms</h3>
+                            <button class="btn btn-link abstract-btn px-0" data-bs-toggle="collapse" data-bs-target="#abstract1">+ Abstract</button>
+                            <div id="abstract1" class="collapse mt-2">
+                                <p class="text-muted">While there is excitement about the potential of algorithms to optimize individual decision-making, changing individual behavior will, almost inevitably, impact markets. Yet little is known about these effects. In this paper, I study how the availability of algorithmic prediction changes entry, allocation, and prices in the U.S. residential real estate market, a key driver of household wealth. I identify a market-level natural experiment that generates variation in the cost of using algorithms to value houses: digitization, the transition from physical to digital housing records. I show that digitization leads to entry by investors using algorithms, but does not displace investors using human judgment. Instead, human investors shift towards houses that are difficult to predict algorithmically. Algorithm-using investors predominantly purchase minority-owned homes, an area where humans may be biased. Digitization increases the average sale price of minority-owned homes by 5% or $5,000 and nearly eliminates racial disparities in home prices. Algorithmic investors, via competition, affect the prices paid by humans, which drives most of the reduction in racial disparities.  This decrease in racial inequality underscores the potential of algorithms to mitigate human biases at the market level.</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="mt-4">
+                    <h2 class="h3 text-white p-2 section-header">Accepted and Published Papers</h2>
+                    <div class="card mt-1">
+                        <div class="card-body">
+                            <h3 class="h5 paper-title"><a href="https://www.nber.org/papers/w31161" class="text-decoration-none">Generative AI at Work</a> with <a href="https://www.brynjolfsson.com/" class="text-decoration-none">Erik Brynjolfsson</a> and <a href="https://danielle-li.github.io/" class="text-decoration-none">Danielle Li</a> (arXiv link)</h3>
+                            <!-- <p class="mb-1">with <a href="#" class="text-decoration-none">Erik Brynjolfsson</a> and <a href="#" class="text-decoration-none">Danielle Li</a> (<a href="#" class="text-decoration-none">arXiv link</a>)</p> -->
+                            <p class="text-muted sub-heading mb-1">Conditionally accepted, <em>Quarterly Journal of Economics</em></p>
+                            <small class="text-muted selected-media d-block"><span style="color: #5a5a5a;">Selected Media:</span> <em><a href="https://www.axios.com/2023/04/25/artificial-intelligence-workplace-productivity" class="selected-media">Axios</a>, <a href="https://www.bloomberg.com/news/articles/2023-04-24/generative-ai-boosts-worker-productivity-14-new-study-finds" class="selected-media">Bloomberg Businessweek</a>, <a href="https://www.businessinsider.com/rise-of-ai-artificial-intelligence-how-to-prepare-history-productivity-2023-7" class="selected-media">Business Insider</a>, <a href="https://www.exponentialview.co/p/ev-391" class="selected-media">Exponential View</a>, <a href="https://fortune.com/2023/04/24/chatgpt-ai-worker-productivity-fortune-500-study/" class="selected-media">Fortune</a>, <a href="https://www.nytimes.com/2023/05/08/business/dealbook/ai-workplace-changes.html" class="selected-media">New York Times</a>, <a href="https://www.npr.org/sections/money/2023/05/02/1172791281/this-company-adopted-ai-heres-what-happened-to-its-human-workers" class="selected-media">NPR Planet Money</a>, <a href="https://www.marketplace.org/2023/05/05/could-artificial-intelligence-be-your-next-coworker/" class="selected-media">NPR Marketplace</a></em></small>
+                            <button class="btn btn-link abstract-btn px-0 mt-2" data-bs-toggle="collapse" data-bs-target="#abstract2">+ Abstract</button>
+                            <div id="abstract2" class="collapse mt-2">
+                                <p class="text-muted">New AI tools have the potential to change the way workers perform and learn, but little is known about their impacts on the job. In this paper, we study the staggered introduction of a generative AI-based conversational assistant using data from 5,179 customer support agents. Access to the tool increases productivity, as measured by issues resolved per hour, by 14% on average, including a 35% improvement for novice and low-skilled workers but with minimal impact on experienced and highly skilled workers. We provide suggestive evidence that the AI model disseminates the best practices of more able workers and helps newer workers move down the experience curve. In addition, we find that AI assistance improves customer sentiment, increases employee retention, and may lead to worker learning. Our results suggest that access to generative AI can increase productivity, with large heterogeneity in effects across workers.</p>
+                                <hr> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mt-1">
+                        <div class="card-body">
+                            <h3 class="h5 paper-title"><a href="https://www.nber.org/papers/w27736" class="text-decoration-none">Hiring as Exploration with, </a>with <a href="https://danielle-li.github.io/" class="text-decoration-none">Danielle Li</a> and <a href="https://www.marketplace.org/2023/05/05/could-artificial-intelligence-be-your-next-coworker/" class="text-decoration-none">Peter Bergman</a> (arXiv link)</h3>
+                            <!-- <p class="mb-1">with <a href="#" class="text-decoration-none">Danielle Li</a> and <a href="#" class="text-decoration-none">Peter Bergman</a> (<a href="#" class="text-decoration-none">arXiv link</a>)</p> -->
+                            <p class="text-muted sub-heading mb-1">Conditional accepted, <em>Review of Economic Studies</em></p>
+                            <small class="text-muted selected-media d-block"><span style="color: #5a5a5a;">Selected Media: </span><em><a href="https://www.axios.com/2020/10/20/ai-robots-recruiting-hiring-discrimination" class="selected-media">Axios</a>, <a href="https://www.bloomberg.com/news/articles/2021-02-25/how-to-hire-better-mit-sloan-economist-danielle-li" class="selected-media">Bloomberg Businessweek</a>, <a href="https://www.businessinsider.com/hiring-recruiting-diversity-top-talent-machine-learning-exploration-based-algorithm-2020-10" class="selected-media">Business Insider</a>, <a href="https://www.fastcompany.com/90575394/design-of-hiring-algorithms-can-double-diversity-in-firms" class="selected-media">Fast Company</a>, <a href="https://mitsloan.mit.edu/ideas-made-to-matter/exploration-based-algorithms-can-improve-hiring-quality-and-diversity" class="selected-media">MIT News</a></em></small>
+                            <button class="btn btn-link abstract-btn px-0 mt-2" data-bs-toggle="collapse" data-bs-target="#abstract3">+ Abstract</button>
+                            <div id="abstract3" class="collapse mt-2">
+                                <p class="text-muted">This paper views hiring as a contextual bandit problem: to find the best workers over time, firms must balance “exploitation” (selecting from groups with proven track records) with “exploration” (selecting from under-represented groups to learn about quality). Yet modern hiring algorithms, based on “supervised learning” approaches, are designed solely for exploitation. Instead, we build a resume screening algorithm that values exploration by evaluating candidates according to their statistical upside potential. Using data from professional services recruiting within a Fortune 500 firm, we show that this approach improves the quality (as measured by eventual hiring rates) of candidates selected for an interview, while also increasing demographic diversity, relative to the firm's existing practices. The same is not true for traditional supervised learning based algorithms, which improve hiring rates but select far fewer Black and Hispanic applicants. In an extension, we show that exploration-based algorithms are also able to learn more effectively about simulated changes in applicant hiring potential over time. Together, our results highlight the importance of incorporating exploration in developing decision-making algorithms that are potentially both more efficient and equitable.</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
